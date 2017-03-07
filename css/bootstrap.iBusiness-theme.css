@@ -1,0 +1,26 @@
+.navbar {
+       
+}
+
+#section-head {
+    height: 672px;
+    background: #ccc;
+}
+
+#section-about {
+    height: 690px;
+    background: #000;
+}
+
+#section-topics {
+    height: 430px;
+}
+
+#section-speakers {
+    height: 678px;
+    background: #ddd;
+}
+
+#section-how-to-pay {
+    height: 534px;
+}
