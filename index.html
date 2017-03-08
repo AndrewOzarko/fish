@@ -9,23 +9,22 @@
     <link rel="stylesheet" href="css/bootstrap.iBusiness-theme.css">
 </head>
 <body>
-   
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Intelligent Business</a>
-        </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Записатись</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     
-   <div id="section-head">
-       
+   <div id="section-head">  
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Intelligent Business</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Записатись</a></li>
+                </ul>
+            </div>
+        </nav>  
    </div>
-   
+    
+    <a id="showHere"></a>
+    
    <div id="section-about">
        
    </div>
@@ -44,5 +43,25 @@
    
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="js/headhesive.min.js"></script>
+    <script>
+
+        // Set options
+        var options = {
+            offset: '#showHere',
+            offsetSide: 'top',
+            classes: {
+                clone:   'banner--clone',
+                stick:   'banner--stick',
+                unstick: 'banner--unstick'
+            }
+        };
+
+        // Initialise with options
+        var banner = new Headhesive('.navbar', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+    </script>
 </body>
 </html>
