@@ -1,7 +1,11 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar {
     background: transparent;
     width: 100%;
-    min-height: 67px;
+    height: 67px;
     margin-bottom: 0;
 }
 
@@ -9,38 +13,56 @@
     border: 0;
 }
 
-.navbar-brand,
-.navbar-nav > li > a{
+.navbar-brand {
     height: 67px;
     line-height: 67px;
     padding: 0px 15px;
 }
 
+.navbar-default .navbar-nav > li > a {
+    margin: 10px 15px;
+    border-radius: 0;
+}
+
+.btn-head {
+    background: #5c5f9d;
+    height: 46px;
+    padding: 0px 28px;
+}
+
+.btn-head:hover,
+.btn-head:active {
+    background: #4229af;
+    color: #fff;
+}
+
 #section-head {
     height: 672px;
-    background: #ccc;
+    background: url(../images/owl-bg.png);
 }
 
 #section-about {
     height: 690px;
-    background: #000;
+    background: #8a99f6;
 }
 
 #section-topics {
+    background: url(../images/owl-bg.png);
     height: 430px;
 }
 
 #section-speakers {
+    background: #8a99f6;
     height: 678px;
-    background: #ddd;
 }
 
 #section-how-to-pay {
+    background: url(../images/owl-bg.png);
     height: 534px;
 }
 
 
-.banner--clone {
+.owl-navbar {
 
   /* Required styles */
   position: fixed;
@@ -63,38 +85,12 @@
 
 }
 
-
-/**
- * Headhesive stick
- * > `stick` class for the cloned element:
- *
- * @example
- * var options = {
- *   classes {
- *     stick: 'banner--stick';
- *   }
- * }
- */
-.banner--stick {
-
-  /* Translate back to 0%; */
+.owl-stick {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-
-/**
- * Headhesive unstick
- * > `unstick` class for the cloned element:
- *
- * @example
- * var options = {
- *   classes {
- *     unstick: 'banner--unstick';
- *   }
- * }
- */
-.banner--unstick {
+.owl-unstick {
   /* Not required to use, but could be useful to have */
 }
